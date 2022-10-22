@@ -1,6 +1,8 @@
-README
 
 
+### A solution for clients to store data in a distante server (solution to improve)
+
+# Some instructions
 
 Pour démarrer le SBE : 
 
