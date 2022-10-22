@@ -1,0 +1,40 @@
+{
+  "directors": [
+    {
+      "firstname": 145,
+      "lastname": "",
+      "birthdate": "hello"
+    },
+    [],
+    {
+      "firstname": {},
+      "lastname": [],
+      "birthdate": "hello"
+    }
+  ],
+  "reviews": [
+    {
+      "evaluation": "5",
+      "author": 458,
+      "comment": [],
+      "creation_date": 457
+    },
+    {
+      "evaluation": {},
+      "author": "tmarcoolyn0",
+      "comment": "Tim Roth appears impervious and shamelessly kindhearted as the jittery Atoner",
+      "creation_date": "2022-08-11"
+    }
+  ],
+  "categories": [
+    "Sport",
+    147,
+    {},
+    [],
+    ""
+  ],
+  "title": 458,
+  "duration": "145",
+  "castings": {},
+  "release_year": "1998"
+}

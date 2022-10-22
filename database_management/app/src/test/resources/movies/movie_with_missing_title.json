@@ -1,0 +1,19 @@
+{
+  "duration": 145,
+  "castings": [
+    {
+      "firstname": "Joy",
+      "birthdate": "2021-12-25",
+      "lastname": "Edgin"
+    }
+  ],
+  "directors": [
+    {
+      "firstname": "Joy",
+      "birthdate": "2021-12-25",
+      "lastname": "Edgin"
+    }
+  ],
+  "reviews": [],
+  "release_year": 2008
+}

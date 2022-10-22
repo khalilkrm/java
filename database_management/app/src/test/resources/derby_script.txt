@@ -1,0 +1,81 @@
+create schema ROOT
+
+create table CATEGORY
+(
+    NAME varchar(60) not null
+        primary key
+);
+
+create table customer
+(
+    ID       int GENERATED ALWAYS AS IDENTITY(Start with 1, Increment by 1)
+        primary key,
+    NICKNAME varchar(60) not null
+);
+
+create table MOVIE
+(
+    ID           int
+        primary key GENERATED ALWAYS AS IDENTITY(Start with 1, Increment by 1),
+    NAME         varchar(60) not null,
+    RELEASE_YEAR int         not null,
+    RUNTIME      time        not null
+);
+
+create table MOVIE_CATEGORY
+(
+    MOVIE_ID      int         not null,
+    CATEGORY_NAME varchar(60) not null,
+    primary key (MOVIE_ID, CATEGORY_NAME),
+    constraint FK_MOVIE_CATEGORY_MOVIE
+        foreign key (MOVIE_ID) references movie (ID),
+    constraint FK_MOVIE_CATEGORY_CATEGORY
+        foreign key (CATEGORY_NAME) references category (NAME)
+);
+
+create table PERSON
+(
+    ID        int GENERATED ALWAYS AS IDENTITY(Start with 1, Increment by 1)
+        primary key,
+    LASTNAME  varchar(60) not null,
+    FIRSTNAME varchar(60) not null,
+    BIRTHDATE date        not null
+);
+
+create table CASTING
+(
+    MOVIE_ID int not null,
+    ACTOR_ID int not null,
+    POSITION int not null,
+    primary key (MOVIE_ID, ACTOR_ID),
+    constraint FK_CASTING_MOVIE
+        foreign key (MOVIE_ID) references movie (ID),
+    constraint FK_CASTING_PERSON
+        foreign key (ACTOR_ID) references person (ID)
+);
+
+create table DIRECTED_BY
+(
+    MOVIE_ID  int not null,
+    PERSON_ID int not null,
+    primary key (MOVIE_ID, PERSON_ID),
+    constraint FK_DIRECTED_BY_MOVIE
+        foreign key (MOVIE_ID) references movie (ID),
+    constraint FK_DIRECTED_BY_PERSON
+        foreign key (PERSON_ID) references person (ID)
+);
+
+create table REVIEW
+(
+    MOVIE_ID    int          not null,
+    CUSTOMER_ID int          not null,
+    COMMENT     varchar(500) not null,
+    EVALUATION  int          not null,
+    REVIEW_DATE date         not null,
+    primary key (MOVIE_ID, CUSTOMER_ID),
+    constraint FK_REVIEW_CUSTOMER
+        foreign key (CUSTOMER_ID) references customer (ID),
+    constraint FK_REVIEW_MOVIE
+        foreign key (MOVIE_ID) references movie (ID)
+);
+

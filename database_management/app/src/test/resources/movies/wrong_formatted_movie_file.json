@@ -1,0 +1,50 @@
+{
+  "directors":[
+    {
+      "firstname":"Keebly",
+      "lastname":"Woolard",
+      "birthdate":"2021-12-25"
+    },
+    {
+      "firstname":"Jamey",
+      "lastname":"Pharro",
+      "birthdate":"2021-12-25"
+    },
+    {
+      "firstname":"Kinnie",
+      "lastname":"Merryweather",
+      "birthdate":"2021-12-25"
+    ,
+    {
+      "firstname":"Barnett",
+      "lastname":"Domenichini",
+      "birthdate":"2021-12-25"
+    }
+  ],
+  "title":"Tai Chi Master (Twin Warriors) (Tai ji: Zhang San Feng)",
+  "duration":145,
+  "castings":[
+    {
+      "firstname":"Keebly",
+      "lastname":"Woolard",
+      "birthdate":"2021-12-25"
+    },
+    {
+      "firstname":"Jamey",
+      "lastname":"Pharro",
+      "birthdate":"2021-12-25"
+    },
+    {
+      "firstname":"Kinnie",
+      "lastname":"Merryweather",
+      "birthdate":"2021-12-25"
+    },
+    {
+      "firstname":"Barnett",
+      "lastname":"Domenichini",
+      "birthdate":"2021-12-25"
+    }
+  ],
+  "reviews": [],
+  "release_year":1998
+}
